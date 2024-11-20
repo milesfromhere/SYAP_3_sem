@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма регистрации</title>
+  <link rel="stylesheet" href="C:\Users\nikit\OneDrive\Рабочий стол\СЯП\лаб 15\style.css">
+</head>
+<body>
+  <form id="registrationForm">
+    <h2>Заполните форму:</h2>
+
+    <label for="lastName">Фамилия</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Введите фамилию" required>
+
+    <label for="firstName">Имя</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Введите имя" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+    <label for="phone">Телефон (+375291234567)</label>
+    <input type="tel" id="phone" name="phone" placeholder="+375291234567" pattern="\+375(25|29|33|44)\d{7}" required>
+
+    <label for="city">Город</label>
+    <select id="city" name="city" required>
+      <option value="Брест">Брест</option>
+      <option value="Минск">Минск</option>
+      <option value="Гродно">Гродно</option>
+      <option value="Гомель">Гомель</option>
+      <option value="Витебск">Витебск</option>
+    </select>
+
+    <label for="study">Я учусь в БГТУ</label>
+    <input type="checkbox" id="study" name="study">
+
+    <label>На каком курсе Вы учитесь?</label>
+    <div>
+      <label><input type="radio" name="course" value="1" required> 1</label>
+      <label><input type="radio" name="course" value="2"> 2</label>
+      <label><input type="radio" name="course" value="3"> 3</label>
+      <label><input type="radio" name="course" value="4"> 4</label>
+    </div>
+
+    <label for="about">Расскажите о себе</label>
+    <textarea id="about" name="about" placeholder="Введите текст здесь..." rows="5" required></textarea>
+
+    <button onclick="ShowAlert()">Проверить</button>
+    <p id="message"></p>
+  </form>
+
+  <script src="C:\Users\nikit\OneDrive\Рабочий стол\СЯП\лаб 15\script.js"></script>
+</body>
+</html>

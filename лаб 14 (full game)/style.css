@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #2a9d8f;
+    margin-bottom: 20px;
+  }
+  
+  #controls {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #2a9d8f;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #21867a;
+  }
+  
+  #gameContainer {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    margin: 0 auto;
+    max-width: 360px;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .cell[contenteditable="true"] {
+    background-color: #f0f9f9;
+  }
+  
+  .cell.fixed {
+    background-color: #ddd;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e76f51;
+  }
+  

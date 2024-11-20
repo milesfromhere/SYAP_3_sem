@@ -1,0 +1,103 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #2a9d8f;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для ввода задачи и кнопки "Добавить" */
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Кнопка добавления */
+  #addTaskButton {
+    background-color: #2a9d8f;
+    color: white;
+  }
+  
+  /* Стили для фильтров */
+  .filters button {
+    background-color: #264653;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .filters button:hover {
+    background-color: #2a9d8f;
+  }
+  
+  /* Список задач */
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .task-item span {
+    flex: 1;
+  }
+  
+  .task-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  /* Кнопка редактирования */
+  .task-item button:first-of-type {
+    background-color: #f4a261;
+    color: white;
+  }
+  
+  /* Кнопка удаления */
+  .task-item button:last-of-type {
+    background-color: #e76f51;
+    color: white;
+  }
+  
+  /* Дополнительные эффекты */
+  .task-item button:hover {
+    opacity: 0.8;
+  }
